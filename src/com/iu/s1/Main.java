@@ -8,7 +8,6 @@ public class Main {
 		
 		new StudentController().start();
 
-		new StudentAddService().excut();
 		
 		
 		

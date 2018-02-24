@@ -1,13 +1,15 @@
 package com.iu.student;
 
-public class StudentAddService {
+public class StudentAddService implements Action {
 	
 	//excute메서드 생성
 	//내용은 매개변수로 받은 학생을
 	//studentDatabase에 있는
 	//student의 값이 null이면 
 	
-	public void excut(){
+
+
+	public Student[] excute() {
 
 		Student students=new Student();
 		StudentInput input=new StudentInput();
@@ -19,6 +21,7 @@ public class StudentAddService {
 			StudentDataBase.students=new Student[count];
 			StudentDataBase.students[count-1]=new Student();
 			StudentDataBase.students[count-1]=students;
+			return StudentDataBase.students;
 		}
 		else{
 			
@@ -30,7 +33,18 @@ public class StudentAddService {
 				
 			}
 			
-//			s[counts]=student;
-		}
+			s[counts]=students;
+			return s;
+		}		
+	}
+
+	public void excute(Student student) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void excute(Student[] students) {
+		// TODO Auto-generated method stub
+		
 	}
 }

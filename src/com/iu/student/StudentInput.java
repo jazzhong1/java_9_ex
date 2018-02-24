@@ -16,8 +16,8 @@ public class StudentInput {
 			System.out.print("영어점수:");
 			students.setEng(sc.nextInt());
 			System.out.print("수학점수:");
+			students.setMath(sc.nextInt());
 		
-		sc.close();
 		return students;
 	}
 }

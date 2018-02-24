@@ -44,11 +44,13 @@ public class Student {
 		return total;
 	}
 	public void setTotal(int total) {
+		this.total=total;
 		
 	}
 	public double getAvg() {
 		return avg;
 	}
 	public void setAvg(double avg) {
+		this.avg=avg;
 	}
 }

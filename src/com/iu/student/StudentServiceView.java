@@ -4,9 +4,6 @@ public class StudentServiceView implements Action{
 
 	
 
-	public Student[] excute() {
-		return null;
-	}
 
 	public void excute(Student student) {
 		// TODO Auto-generated method stub
@@ -22,6 +19,12 @@ public class StudentServiceView implements Action{
 			System.out.println(students[i].getAvg());
 		}
 		
+		
+	}
+
+	@Override
+	public void excute() {
+		// TODO Auto-generated method stub
 		
 	}
 	

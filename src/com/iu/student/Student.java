@@ -45,12 +45,10 @@ public class Student {
 	}
 	public void setTotal(int total) {
 		
-		this.total =kor+math+eng;
 	}
 	public double getAvg() {
 		return avg;
 	}
 	public void setAvg(double avg) {
-		this.avg = total/3;
 	}
 }

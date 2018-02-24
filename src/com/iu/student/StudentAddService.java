@@ -9,7 +9,7 @@ public class StudentAddService implements Action {
 	
 
 
-	public Student[] excute() {
+	public void excute() {
 
 		Student students=new Student();
 		StudentInput input=new StudentInput();
@@ -21,7 +21,6 @@ public class StudentAddService implements Action {
 			StudentDataBase.students=new Student[count];
 			StudentDataBase.students[count-1]=new Student();
 			StudentDataBase.students[count-1]=students;
-			return StudentDataBase.students;
 		}
 		else{
 			
@@ -34,14 +33,11 @@ public class StudentAddService implements Action {
 			}
 			
 			s[counts]=students;
-			return s;
+			StudentDataBase.students=s;
 		}		
 	}
 
-	public void excute(Student student) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 	public void excute(Student[] students) {
 		// TODO Auto-generated method stub

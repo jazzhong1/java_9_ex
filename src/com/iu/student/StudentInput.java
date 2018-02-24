@@ -17,7 +17,12 @@ public class StudentInput {
 			students.setEng(sc.nextInt());
 			System.out.print("수학점수:");
 			students.setMath(sc.nextInt());
-		
+			
+			int hap=students.getEng()+students.getKor()+students.getMath();
+			students.setTotal(hap);
+			double avg=hap/3.0;
+			students.setAvg(avg);
+			
 		return students;
 	}
 }
